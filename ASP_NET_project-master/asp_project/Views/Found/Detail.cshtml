@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using Microsoft.AspNetCore.Http
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header"> @Model.Found_Name</h2>
+    </div>
+</div>
+<br />
+<br />
+
+<div class="row">
+    <div class="col-lg-10">
+        <div class="panel panel-default">
+            <div class="panel panel-heading ">
+                <label><b>제목 :  </b> </label>  @Model.Found_Name
+            </div>
+            <div class="panel-body">
+                습득 날짜 : @Html.Raw(Model.Found_DateTime) <br />
+                설명 : @Html.Raw(Model.Found_Description) <br />
+                보관 장소 : @Html.Raw(Model.Found_GetPosition) <br />
+                @*이미지 : @Html.Raw(Model.Found_ImageURL) <br />*@
+                <img src="@(Model.Found_ImageURL)">
+            </div>
+            <div class="panel-footer text-right">
+                <a class="btn btn-primary" text-align="right" asp-controller="Found"  href="javascript:getMap()">최단 경로 알아보기</a>
+                <a class="btn btn-primary" text-align="right" asp-controller="Found" asp-action="Index">목록</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function getMap() {
+        var url = "http://map.kakao.com/link/search/" + @Html.Raw(Model.Found_GetPosition);
+        window.location.href = url;
+    }
+</script>

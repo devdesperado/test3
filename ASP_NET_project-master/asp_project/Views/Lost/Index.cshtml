@@ -1,0 +1,47 @@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<a class="btn btn-warning" asp-action="Seoul_xmlToDB">서울시데이터 디비에 저장 </a>
+<br />
+<br />
+<label>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount </label>
+
+<br />
+<br />
+
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>분실날짜</th>
+            <th>물건</th>
+            <th>위치</th>
+            <th>설명</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lost in Model)
+        {
+            <tr>
+                <td>@lost.date</td>
+                <td>@lost.goods</td>
+                <td>@lost.location</td>
+                <td>@lost.description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div class="panel text-center">
+    @for (var p = 1; p <= Model.PageCount; p++)
+    {
+        <a href="@Url.Action("Index", new { page = p })" class="btn btn-outline-primary">@p</a>
+    }
+</div>
+

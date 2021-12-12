@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebApplication3.Models.Note
+
+<form class="form-horizontal" method="post" asp-controller="Note" asp-action="Delete">
+    <h1>삭제하시겠습니까 ?</h1>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" asp-route-noteNo="@Model.NoteNo">삭제</button>
+        <a class="btn btn-default" asp-controller="Note" asp-action="Index">취소</a>
+    </div>
+</form>

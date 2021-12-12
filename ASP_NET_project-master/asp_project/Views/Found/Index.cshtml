@@ -1,0 +1,20 @@
+﻿@model WebApplication3.Models.SearchValue
+@{
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label style="margin-bottom:20px;" class="text-danger">날짜를 선택해주세요 </label>&nbsp;&nbsp;&nbsp;
+                <div>
+                시작 :  @(Html.TextBoxFor(m => m.Start_date, new { @type = "date", @Value = Model.Start_date.ToString("yyyy-MM-dd") }))
+                </div>
+                <div style="margin-top:20px;">
+                끝   :  @(Html.TextBoxFor(m => m.End_date, new { @type = "date", @Value = Model.End_date.ToString("yyyy-MM-dd") }))
+                </div>
+            </div>
+
+        @Html.DropDownListFor(m => m.Value, new SelectList(Model.cateList, "Value", "Text"), "분류를 선택하세요", new { @class = "form-control" })
+        @*<label>   특징</label> @Html.TextBoxFor(m => m.name)*@
+    <footer class="form-group text-right" style="margin-top : 100px;">
+        <button type="submit" class="btn btn-primary" asp-action="Search"> 검색 </button>
+    </footer>
+    </form>
+}
