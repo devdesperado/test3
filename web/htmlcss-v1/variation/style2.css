@@ -1,0 +1,32 @@
+:root {
+  --global--height: 100px;
+  --content-visible: hidden;
+  --background-prop: center no-repeat;
+  --background-size: cover;
+}
+
+.custom-property--1 {
+  height: var(--global--height);
+  background: #aaa;
+}
+.custom-property--2 {
+  height: var(--global--height);
+  background: green;
+  background-size: var(--background-size);
+}
+.custom-property--3 {
+  height: var(--global--height);
+  background: #f22222;
+}
+:is(.is1, .is2, .is3) a {
+  color: blue;
+  font-size: 2vw;
+}
+:where(.where1, .where2, .where3) a {
+  color: blue;
+  font-size: 2vw;
+}
+a {
+  color: white;
+  font-size: 20px;
+}

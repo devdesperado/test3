@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Boards</title>
+
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+	<link href="parts.css" rel="stylesheet">
+
+<style>
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.footer-container {
+		gap: 20px;
+		align-items: flex-start;
+		position: relative;
+	}
+
+	.footer-container > .footer-sns {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		align-items: center;
+	}
+}
+
+/* 바닥글-SNS */
+.footer-sns {
+	display: flex;
+	gap: 24px;
+	font-size: 24px;
+}
+</style>
+</head>
+<body class="parts-footer">
+
+<footer class="footer">
+	<div class="footer-container w-container">
+		<div class="footer-site">
+			<a href="index.html">
+				<img src="img/logo.svg" alt="Boards" width="135" height="26">
+			</a>
+		</div>
+
+		<ul class="footer-sns">
+			<li>
+				<a href="#">
+					<i class="fab fa-twitter"></i>
+					<span class="sr-only">Twitter</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fab fa-facebook-f"></i>
+					<span class="sr-only">Facebook</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+					<span class="sr-only">Instagram</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="footer-menu">
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">개인정보처리</a></li>
+			<li><a href="content.html">서비스안내</a></li>
+			<li><a href="#">문의</a></li>
+		</ul>
+
+		<div class="footer-copy">
+			@2021-2022 JASON JAEWOO KIM.
+		</div>
+	</div>
+</footer>
+	
+</body>
+</html>

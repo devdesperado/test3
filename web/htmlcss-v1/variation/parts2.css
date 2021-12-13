@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* 본문 */
+:root {
+	--v-space: clamp(90px, 9vw, 120px);
+}
+
+body {
+	margin: 0;
+	background-color: #eeeeee;
+	color: #222222;
+	font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	line-height: 1.8;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	filter: brightness(90%) contrast(120%);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	overflow-x: hidden;
+}
+body {
+	overflow: hidden;
+}
+
+/* 이미지와 텍스트 */
+.imgtext {
+	background-color: #ffffff;
+}
+
+/* 제목과 하위제목(빨간 짧은 선으로 데코레이션) */
+.heading-decoration {
+	font-size: clamp(30px, 3vw, 40px);
+	min-height: 0vw;
+	font-weight: 400;
+}
+
+.heading-decoration::after {
+	display: block;
+	content: '';
+	width: 160px;
+	height: 0px;
+	border-top: solid 1px #b72661;
+	margin-top: 0.6em;
+}
+
+.heading-decoration + p {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	color: #707070;
+	font-family: 'Spoqa Han Sans Neo', sans-serif;
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.imgtext-container {
+		grid-template-columns: 1fr 2fr;
+		align-items: center;
+	}
+
+	.imgtext-container.reverse {
+		grid-template-columns: 2fr 1fr;
+	}
+}

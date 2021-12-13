@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Boards</title>
+
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+	<link href="parts.css" rel="stylesheet">
+
+<style>
+.plans-container {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+}
+
+@media (min-width: 768px) {
+	.plans-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.plans-container > * {
+		width: calc(50% - (27px * 1 / 2));
+		box-sizing: border-box;
+	}
+}
+</style>
+</head>
+<body class="parts-plans">
+
+<section class="plans">
+	<div class="plans-container">
+		<div class="plan">
+			<h3>Free</h3>
+			<p class="desc">편리한 온라인 도구를 지금 사용할 수 있는 플랜입니다.</p>
+			<p class="price">무료</p>
+			<a href="#" class="btn">가입하기</a>
+		</div>
+
+		<div class="plan">
+			<h3>Standard</h3>
+			<p class="desc">엄선한 최신 문구 상품을 매월 구독하는 스탠다드 플랜입니다.</p>
+			<p class="price">9,800원/월</p>
+			<a href="#" class="btn btn-accent">가입하기</a>
+		</div>
+
+		<div class="plan">
+			<h3>Pro</h3>
+			<p class="desc">프로페셔널한 도구를 빌려주거나 공방 이용 등 다양한 요구사항에 대응하는 플랜입니다.</p>
+			<p class="price">29,800원</p>
+			<a href="#" class="btn btn-accent">가입하기</a>
+		</div>
+
+        <div class="plan">
+			<h3>Premium</h3>
+			<p class="desc">특별한 지원을 준비한 프리미엄 플랜입니다.</p>
+			<p class="price">49,800원</p>
+			<a href="#" class="btn btn-accent">가입하기</a>
+		</div>
+	</div>
+</section>
+	
+</body>
+</html>

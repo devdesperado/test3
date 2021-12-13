@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        HTML&CSS모던코딩 교육
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        .markdown-body {
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+        }
+        .markdown-body header {
+            
+            padding: 30px;
+            border: solid 4px #222;
+        }
+        .markdown-body h1 {
+            border: none;
+            text-align: center;
+            font-size: clamp(28px, 4vw, 32px);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .markdown-body h1 span {
+            color: #eb6168;
+            font-size: 2em;
+            font-weight: 900;
+        }
+        .markdown-body h1 span span {
+            font-size: 0.7em;
+        }
+        .markdown-body h1 + p {
+            margin: 40px 0 0;
+            padding: 20px;
+            background-color: #d7e8b9;
+            text-align: center;
+        }
+
+        .markdown-body h2 {
+            border-bottom: dotted 1px #cdab99;
+            margin-top: 50px;
+        }
+        .markdown-body h2 span {
+            color: #cdab99;
+            font-weight: 900;
+        }
+
+        .markdown-body > ul ul {
+            margin-top: 5px;
+        }
+        .markdown-body > ul > li {
+            margin-bottom: 18px;
+        }
+        .markdown-body > ul.simple > li {
+            margin-bottom: 5px;
+        }
+
+        .markdown-body ::marker {
+            color: #cdab99;
+        }
+        .markdown-body a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        .markdown-body a:hover {
+            background-color: #d7e8b9;
+        }
+    </style>
+</head>
+
+<body>
+<div id="doc" class="markdown-body container-fluid">
+<header>
+<h1 id="HTML&CSS모던쿄딩교육"><a class="anchor hidden-xs" href="#HTML&CSS모던쿄딩교육" title="HTML&CSS모던쿄딩교육"><i class="fa fa-link"></i></a>
+    <span>HTML<span>＆</span>CSS</span><br>
+    모던코딩 교육</h1>
+<p>KH정보교육원 HTML, CSS관련 퍼블리싱 교육자료 (작성자: 김재우)</p>
+</header>
+
+<h2 id="완성페이지"><a class="anchor hidden-xs" href="#완성페이지" title="완성페이지"><i class="fa fa-link"></i></a>
+    <span>Pages</span>　완성페이지</h2><ul>
+<li><a href="web/index.html" target="_blank" rel="noopener">TOP페이지</a></li>
+<li><a href="web/content.html" target="_blank" rel="noopener">컨텐츠페이지</a></li>
+<li><a href="xd/web-design.zip" target="_blank" rel="noopener">디자인파일(Adobe XD필요)</a></li>
+</ul>
+<h2 id="Chapter-1-헤더"><a class="anchor hidden-xs" href="#Chapter-1-헤더" title="Chapter-1-해더"><i class="fa fa-link"></i></a>
+<span>1장</span>　헤더</h2><ul>
+<li><a href="variation/header-flex01.html" target="_blank" rel="noopener">양쪽 끝에 배치하는 레이아웃 - Flexbox에서 설정하는 경우(1)</a>
+<ul>
+<li><a href="variation/header-flex01-a.html" target="_blank" rel="noopener">아이템수가 3개 이상인 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/header-flex02.html" target="_blank" rel="noopener">양쪽 끝에 배치하는 레이아웃 - Flexbox에서 설정하는 경우(2)</a>
+<ul>
+<li><a href="variation/header-flex02-a.html" target="_blank" rel="noopener">아이템수가 3개 이상인 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/header-grid01.html" target="_blank" rel="noopener">양쪽 끝에 배치하는 레이아웃 - CSS Grid로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/header-grid01-a.html" target="_blank" rel="noopener">아이템수가 3개 이상인 경우 (1)</a></li>
+<li><a href="variation/header-grid01-b.html" target="_blank" rel="noopener">아이템수가 3개 이상인 경우 (2)</a></li>
+<li><a href="variation/header-grid01-c.html" target="_blank" rel="noopener">아이템수가 3개 이상인 경우 (3)</a></li>
+</ul>
+</li>
+<li><a href="variation/w-container.html" target="_blank" rel="noopener">가로너비와 좌우 여백 - Width로 조정하는 경우</a>
+<ul>
+<li><a href="variation/w-container-a.html" target="_blank" rel="noopener">min()함수를 사용하지 않는 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/w-container-padding.html" target="_blank" rel="noopener">가로너비와 좌우 여백 - 패딩으로 조정하는 경우</a>
+<ul>
+<li><a href="variation/w-container-padding-a.html" target="_blank" rel="noopener">좌우여백을 고정크기로 설정하는 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/w-container-grid.html" target="_blank" rel="noopener">가로너비와 좌우 여백 - CSS Grid로 조정하는 경우</a>
+<ul>
+<li><a href="variation/w-container-grid-a.html" target="_blank" rel="noopener">여백쪽에서 크기를 조정하기</a></li>
+</ul>
+</li>
+<li><a href="variation/header-position01.html" target="_blank" rel="noopener">헤더를 화면상단에 고정하는 레이아웃 - position:sticky로 설정하는 경우 </a></li>
+</ul><h2 id="Chapter-2-히어로"><a class="anchor hidden-xs" href="#Chapter-2-히어로" title="Chapter-2-히어로"><i class="fa fa-link"></i></a>
+    <span>2장</span>　히어로</h2><ul>
+<li><a href="variation/hero-grid01.html" target="_blank" rel="noopener">가로/가운데에 배치하는 레이아웃 - CSS Grid로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/hero-grid01-a.html" target="_blank" rel="noopener">가로/가운데에 배치할 항목이 하나뿐인 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/hero-flex01.html" target="_blank" rel="noopener">가로/가운데에 배치하는 레이아웃 - Flexbox에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/hero-flex01-a.html" target="_blank" rel="noopener">가로/가운데 배치할 항목이 하나뿐인 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/hero-img01.html" target="_blank" rel="noopener">이미지에 텍스트를 겹치는 레이아웃 - 배경이미지로 표시하는 경우</a></li>
+<li><a href="variation/hero-img02.html" target="_blank" rel="noopener">이미지에 텍스트를 겹치는 레이아웃 - &lt;img&gt;로 표시하는 경우</a></li>
+<li><a href="variation/hero-font01.html" target="_blank" rel="noopener">화면너비에 따라 변경되는 글꼴 크기 - clamp()로 설정하는 경우</a>
+<ul>
+<li><a href="variation/hero-font01-a.html" target="_blank" rel="noopener">화면너비375～1366px애 걸쳐 부드럽게 변화시키기</a></li>
+</ul>
+</li>
+<li>텍스트 확대 및 접근성 
+<ul>
+<li><a href="variation/hero-fontzoom01.html" target="_blank" rel="noopener">확대로 글꼴 크기가 작아지는 경우 - clamp()</a></li>
+<li><a href="variation/hero-fontzoom01-a.html" target="_blank" rel="noopener">확대 시, 글꼴 크기가 작아지는 경우 - @media</a></li>
+</ul>
+</li>
+</ul><h2 id="Chapter-3-이미지및텍스트"><a class="anchor hidden-xs" href="#Chapter-3-이미지및텍스트" title="Chapter-3-이미지및텍스트"><i class="fa fa-link"></i></a>
+    <span>3장</span>　이미지 및 텍스트</h2><ul>
+<li><a href="variation/imgtext-flex01.html" target="_blank" rel="noopener">이미지와 텍스트를 정렬하는 레이아웃 - Flexbox에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/imgtext-flex01-a.html" target="_blank" rel="noopener">항목 배치를 반대로 하는 경우 </a></li>
+</ul>
+</li>
+<li><a href="variation/imgtext-grid01.html" target="_blank" rel="noopener">이미지와 텍스트를 정렬하는 레이아웃 - CSS Grid에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/imgtext-grid01-a.html" target="_blank" rel="noopener">아이템의 배치를 반대로 하는 경우 - order </a></li>
+<li><a href="variation/imgtext-grid01-b.html" target="_blank" rel="noopener">아이템 배치를 반대로 하는 경우 - direction</a></li>
+</ul>
+</li>
+</ul><h2 id="Chapter-4-기사목록"><a class="anchor hidden-xs" href="#Chapter-4-기사목록" title="Chapter-4-기사목록"><i class="fa fa-link"></i></a>
+    <span>4장</span>　기사목록</h2><ul>
+<li><a href="variation/posts-grid01.html" target="_blank" rel="noopener">타일모양으로 배열된 레이아웃 - CSS Grid에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/posts-grid01-a.html" target="_blank" rel="noopener">항목간격을 조정하는 경우</a></li>
+<li><a href="variation/posts-grid01-b.html" target="_blank" rel="noopener">아이템수가 5개인 경우</a></li>
+<li><a href="variation/posts-grid01-b1.html" target="_blank" rel="noopener">아이템수가 2개인 경우</a></li>
+<li><a href="variation/posts-grid01-c.html" target="_blank" rel="noopener">항목 정렬을 지정하는 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/posts-grid02.html" target="_blank" rel="noopener">타일모양으로 배열되는 열수가 컨테이너가 가로너비에 달라지는 레이아웃 - CSS Grid로 설정하는 경우</a>
+<ul>
+<li><a href="variation/posts-grid02-a.html" target="_blank" rel="noopener">아이템수가 3개인 경우 - auto-fit</a></li>
+<li><a href="variation/posts-grid02-b.html" target="_blank" rel="noopener">아이템수가 3개인 경우 - auto-fill</a></li>
+</ul>
+</li>
+<li><a href="variation/posts-flex01.html" target="_blank" rel="noopener">타일모양으로 정렬된 레이아웃 - Flexbox에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/posts-flex01-a.html" target="_blank" rel="noopener">항목간격을 조정하는 경우（A）</a></li>
+<li><a href="variation/posts-flex01-b.html" target="_blank" rel="noopener">항목간격을 조정하는 경우（B）</a></li>
+<li><a href="variation/posts-flex01-c.html" target="_blank" rel="noopener">항목간격을 조정하는 경우（C）</a></li>
+</ul>
+</li>
+<li><a href="variation/posts-flex02.html" target="_blank" rel="noopener">타일형으로 배열되는 열수가 컨테이너의 가로너비에 따라 바뀌는 레이아웃 - Flexbox로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/posts-flex02-a.html" target="_blank" rel="noopener">남은 공간을 없애는 경우</a></li>
+</ul>
+</li>
+</ul><h2 id="Chapter-5-바닥글"><a class="anchor hidden-xs" href="#Chapter-5-바닥글" title="Chapter-5-바닥글"><i class="fa fa-link"></i></a>
+    <span>5장</span>　바닥글</h2><ul>
+<li><a href="variation/footer-grid01.html" target="_blank" rel="noopener">자유로운 배치를 변경하는 레이아웃 - CSS Grid에서 설정하는 경우</a>
+<ul>
+<li><a href="variation/footer-grid01a.html" target="_blank" rel="noopener">grid-template-columns 및 grid-template-rows를 생략하는 경우</a></li>
+<li><a href="variation/footer-grid01-a.html" target="_blank" rel="noopener">배치를 영역에서 제어하는 경우</a></li>
+<li><a href="variation/footer-grid01-b.html" target="_blank" rel="noopener">빈줄을 축하ㅏ여 여백 크기 늘리기 </a></li>
+</ul>
+</li>
+<li><a href="variation/footer-flex01.html" target="_blank" rel="noopener">자유배치를 변경하는 레아아웃 - Flexbox에서 설정하는 경우 </a></li>
+<li><a href="variation/footer-menu-flex01.html" target="_blank" rel="noopener">내용에 맞는 크기로 정렬하는 레이아웃 - Flexbox에서 설정하는 경우 </a>
+<ul>
+<li><a href="variation/footer-menu-flex01-a.html" target="_blank" rel="noopener">필요한 경우 줄바꿈을 넣는 경우 </a></li>
+<li><a href="variation/footer-menu-flex01-b.html" target="_blank" rel="noopener">가운데 정렬하기 </a></li>
+</ul>
+</li>
+<li><a href="variation/footer-menu-grid01.html" target="_blank" rel="noopener">내용에 맞는 크기로 정렬하는 레이아웃 - CSS Grid로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/footer-menu-grid01-a.html" target="_blank" rel="noopener">필요한 경우 줄바꿈을 넣는 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/clip-path-a.html" target="_blank" rel="noopener">클리핑 경로로 자르기 - clip-path</a>
+<ul>
+<li><a href="variation/clip-path-b.html" target="_blank" rel="noopener">육각형으로 자르기</a></li>
+</ul>
+</li>
+</ul><h2 id="Chapter-6-기사"><a class="anchor hidden-xs" href="#Chapter-6-기사" title="Chapter-6-기사"><i class="fa fa-link"></i></a>
+    <span>6장 </span>　기사</h2><ul>
+<li><a href="variation/step6-8.html" target="_blank" rel="noopener">기사본문에 단락 이외의 요소를 추가했을 때의 표시 확인하기 (6-8단계)</a></li>
+<li><a href="variation/entry-margin01.html" target="_blank" rel="noopener">기사본문 레이아웃 - margin으로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/entry-margin01-a.html" target="_blank" rel="noopener">브라우저 표준 위아래 여백으로 이미지를 삽입하는 경우 </a></li>
+<li><a href="variation/entry-margin01-b.html" target="_blank" rel="noopener">이미지 위아래 50px여백을 넣는 경우 </a></li>
+</ul>
+</li>
+<li>기사본문 레이아웃 - CSS Grid/Flexbox로 설정하는 경우 
+<ul>
+<li><a href="variation/entry-grid01.html" target="_blank" rel="noopener">CSS Grid로 설정한 경우 </a></li>
+<li><a href="variation/entry-flex01.html" target="_blank" rel="noopener">Flexbox으로 설정한 경우 </a></li>
+</ul>
+</li>
+<li><a href="variation/respimg.html" target="_blank" rel="noopener">반응형 이미지 - &lt;img&gt;의 srcset/sizes속성</a></li>
+<li><a href="variation/respimg-webp.html" target="_blank" rel="noopener">반응형 이미지 - &lt;picture&gt; 및 WebP</a></li>
+</ul><h2 id="Chapter-7-플랜&바닥글"><a class="anchor hidden-xs" href="#Chapter-플랜&바닥글" title="Chapter-7-플랜&바닥글"><i class="fa fa-link"></i></a>
+    <span>7장</span>　플랜&바닥글</h2><ul>
+<li><a href="variation/plans-grid01.html" target="_blank" rel="noopener">카드형UI 레이아웃 - CSS Grid으로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/plans-grid01-a.html" target="_blank" rel="noopener">카드수를 변경하는 경우</a></li>
+<li><a href="variation/plans-grid01-b.html" target="_blank" rel="noopener">여러 줄로 레이아웃으로 만들기</a></li>
+</ul>
+</li>
+<li><a href="variation/plans-flex01.html" target="_blank" rel="noopener">카드형 UI레이아웃 - Flexbox로 설정하는 경우 </a>
+<ul>
+<li><a href="variation/plans-flex01-a.html" target="_blank" rel="noopener">카드수를 변경하는 경우</a></li>
+<li><a href="variation/plans-flex01-b.html" target="_blank" rel="noopener">여러 줄로 레이아웃으로 만들기</a></li>
+</ul>
+</li>
+<li><a href="variation/plan-flex01.html" target="_blank" rel="noopener">카드 내용을 위아래로 정렬하는 레이아웃 - Flexbox에서 설정하는 경우 </a></li>
+<li><a href="variation/plan-grid01.html" target="_blank" rel="noopener">카드 내용을 위아래로 정렬하는 레이아웃 - CSS Grid로 설정하는 경우</a></li>
+<li><a href="variation/lazy.html" target="_blank" rel="noopener">이미지 지연로드 - &lt;img&gt;의 loading속성</a></li>
+</ul><h2 id="Chapter-8-네비게이션"><a class="anchor hidden-xs" href="#Chapter-8-네비게이션" title="Chapter-8-네비게이션"><i class="fa fa-link"></i></a>
+    <span>8장</span>　네비게이션</h2><ul>
+<li><a href="variation/nav-position01.html" target="_blank" rel="noopener">오버레이형태로 표시되는 레이아웃 - position에서 설정하는 경우</a>
+<ul>
+<li><a href="variation/nav-position01-a.html" target="_blank" rel="noopener">A의 경우</a></li>
+<li><a href="variation/nav-position01-b.html" target="_blank" rel="noopener">B의 경우</a></li>
+</ul>
+</li>
+<li><a href="variation/menu/index.html" target="_blank" rel="noopener">햄버거 메뉴 버튼 애니메이션 </a>
+<ul>
+<li><a href="https://jonsuh.com/hamburgers/" target="_blank" rel="noopener">Hamburgers</a></li>
+</ul>
+</li>
+<li>다양한 온라인 체크 도구
+<ul>
+<li><a href="https://search.google.com/test/mobile-friendly" target="_blank" rel="noopener">구글 모바일환경 테스트</a></li>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" rel="noopener">PageSpeed Insights</a></li>
+<li><a href="https://validator.w3.org/nu/" target="_blank" rel="noopener">HTML문법검사</a></li>
+</ul>
+</li>
+</ul>
+    
+</ul>
+</div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#HTML&CSS모던쿄딩교육" title="HTML&CSS모던쿄딩교육">HTML&CSS 모던쿄딩 교육</a><ul class="nav">
+<li><a href="#완성페이지" title="완성페이지">완성페이지</a></li>
+<li><a href="#Chapter-1-헤더" title="1장 헤더">1장 헤더 </a></li>
+<li><a href="#Chapter-2-히어로" title="2장 히어로">2장 히어로</a></li>
+<li><a href="#Chapter-3-이미지및텍스트" title="3장 이미지 및 텍스트">3장 이미지 및 텍스트</a></li>
+<li><a href="#Chapter-4-기사목록" title="4장 기사목록">4장 기사목록</a></li>
+<li><a href="#Chapter-5-바닥글" title="5장 바닥글">5장 바닥글</a></li>
+<li><a href="#Chapter-6-기사" title="6장 기사">6장 기사</a></li>
+<li><a href="#Chapter-7-플랜&바닥글" title="7장 플랜&바닥글">7장 플랜&바닥글</a></li>
+<li><a href="#Chapter-8-네비게이션" title="8장 네비게이션">8장 네비게이션</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#HTML&CSS모던쿄딩교육" title="HTML&CSS모던쿄딩교육">HTML&CSS 모던쿄딩 교육</a><ul class="nav">
+<li class=""><a href="#완성페이지" title="완성페이지">완성페이지</a></li>
+<li class=""><a href="#Chapter-1-헤더" title="1장 헤더">1장 헤더 </a></li>
+<li class=""><a href="#Chapter-2-히어로" title="2장 히어로">2장 히어로</a></li>
+<li class=""><a href="#Chapter-3-이미지및텍스트" title="3장 이미지 및 텍스트">3장 이미지 및 텍스트</a></li>
+<li class=""><a href="#Chapter-4-기사목록" title="4장 기사목록">4장 기사목록</a></li>
+<li class=""><a href="#Chapter-5-바닥글" title="5장 바닥글">5장 바닥글</a></li>
+<li class=""><a href="#Chapter-6-기사" title="6장 기사">6장 기사</a></li>
+<li class=""><a href="#Chapter-7-플랜&바닥글" title="7장 플랜&바닥글">7장 플랜&바닥글</a></li>
+<li class=""><a href="#Chapter-8-네비게이션" title="8장 네비게이션">8장 네비게이션</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
