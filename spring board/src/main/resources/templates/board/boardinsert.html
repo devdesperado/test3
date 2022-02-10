@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>등록</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <div class="container">
+      <h1>게시판 글 등록</h1>
+    </div>
+  </header>
+  <div id="menu">
+    <div class="container">
+      <div id="nav">
+        <ul>
+          <a href="/list"><-</a>
+        </ul>
+      </div>
+      <div id="page_title">
+        <h2>등록</h2>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="container">
+    <form action="/insert" method="post" th:object="${insertForm}">
+      <table class="input-table">
+        <input type="submit" value="게시">
+        <td>
+          <input type="text" placeholder="제목을 입력해주세요" name="title" th:field="${insertForm.title}">
+        </td>
+        </tr>
+        <td>
+          <input type="text" placeholder="게시물의 내용을 입력해주세요" name="content" th:field="${insertForm.content}">
+        </td>
+        </tr>
+        <td>
+          <input type="hidden" name="num" th:field="${insertForm.num}">
+        </td>
+      </table>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
